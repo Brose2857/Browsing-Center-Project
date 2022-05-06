@@ -1,0 +1,75 @@
+{% load static %}
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,user = scalable = no"/>
+        <title>Re-PAN card (Correction)</title>
+        <link rel="stylesheet"  href="{% static "css/form.css" %}">
+        <link rel = "icon" href="{% static "images/diamond.png" %}">
+    </head>
+    
+    <body>
+        <h1>Re-PAN card (Correction)</h1>
+        <div class = "Required-Documents">
+            <h2>Any of the Required Document</h2>
+            <ul>
+                <li>	Two passport size photo	</li>
+                <li>	Old pan card, original	</li>
+                <li>	Proof of date of birth	</li>
+                <li>	Proof of present address</li>
+                <li>	Proof of identity</li>
+                
+                
+
+                
+            </ul>
+
+         </div>
+        
+         <div class = "Required-Documents" id = "apply">
+            <h1>Apply and Submit</h1>
+<form action = "../../Re_pancard/Addrecord4/" method = "POST">
+{% csrf_token %}
+    
+    <p>Name:
+        <input type = "text" name = "name" id = "name" required> <br>
+        Mobile Number:
+        <input type = "text" name = "mobile" id = "mobile" required> <br>
+        
+        Select your Document Name:
+        <select name = "document">
+        <option value = "Select your Document "> ---Select Your Document---</option> 
+        <option value ="	Anganwadi Certificate	">	Anganwadi Certificate	</option>
+<option value ="	Birth Certificate	">	Birth Certificate	</option>
+<option value ="	Certificate of DOB from State/Central Govt Authority	">	Certificate of DOB from State/Central Govt Authority	</option>
+<option value ="	Certificate of Identity from EPFO	">	Certificate of Identity from EPFO	</option>
+<option value ="	DOB Certificate by Gazetted Officer	">	DOB Certificate by Gazetted Officer	</option>
+<option value ="	Identity Certificate from Educational Institute	">	Identity Certificate from Educational Institute	</option>
+<option value ="	PAN Card	">	PAN Card	</option>
+<option value ="	Passport	">	Passport	</option>
+<option value ="	Pension Payment	">	Pension Payment	</option>
+<option value ="	Photo ID from Educational Institute	">	Photo ID from Educational Institute	</option>
+<option value ="	Photo ID with DOB from PSU 	">	Photo ID with DOB from PSU 	</option>
+<option value ="	 STC/TC with Name and DOB	">	 STC/TC with Name and DOB	</option>
+<option value ="	Secondary School Leaving Certificate	">	Secondary School Leaving Certificate	</option>
+<option value ="	University/Board Mark Sheet	">	University/Board Mark Sheet	</option>
+
+
+    </select><br>
+
+Upload Document:
+    <input type = "file" name = "upload document" > <br>
+    <p>
+    Enter your message <br>
+
+    <textarea name="your message" cols="30" rows="10" placeholder="Enter your message"></textarea>
+</p>
+
+    </p>
+    <input type = "Submit" value = "Submit">
+</form>
+         </div>
+
+    </body>
+</html>

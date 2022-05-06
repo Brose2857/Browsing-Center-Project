@@ -1,0 +1,96 @@
+body {
+    text-align: center;
+    background: url(../images/contact.jpg) no-repeat center center fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-width: max-content;
+        
+}
+
+img {
+    height: 6mm;
+    width: 8mm;
+    margin-right: 5mm;
+}
+
+    
+h1 {
+    margin-top: 1%;
+    font-size: 1.5cm;
+    margin-bottom: 4%;
+}
+
+#Wrapper {
+    width: 60%;
+    margin: 0 auto;
+    min-width:fit-content;    
+}
+
+a {
+    text-decoration:none;
+    color: black;
+    font-weight: bold;
+    font-size: 0.5cm;
+    
+
+}
+ul {
+    background-color: white;
+    padding: 10px;
+    font-size: 26px;
+    line-height: 10px;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+li {
+
+    display: inline-block;
+    padding:0 15px;
+    height: 30px;
+    line-height: 30px;      
+}
+h2 {
+    font-size: 1.5cm;
+    width: 50%;
+    margin-right: 15%;
+    text-align: center;
+    box-shadow: 5px 5px 5px 5px white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    line-height: 70px;
+    background-color: black;
+    color: white;
+    margin-bottom: 4%;
+    margin-left: 25%;
+   
+}
+h3 {
+    font-size: 0.75cm;
+}
+
+
+li:hover {
+    background-color: blueviolet;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    }
+
+
+p {
+    padding-top: 150px;
+    font-weight: bolder;
+    font-size: 0.5cm;
+}
+

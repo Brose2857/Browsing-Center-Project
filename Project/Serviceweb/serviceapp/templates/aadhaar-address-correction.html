@@ -1,0 +1,156 @@
+{% load static %}
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,user = scalable = no"/>
+        <title>Aadhaar Address Correction</title>
+        <link rel="stylesheet"  href="{% static "css/form.css" %}">
+        <link rel = "icon" href="{% static "images/diamond.png" %}">
+    </head>
+    
+    <body>
+        <h1>Aadhaar Address Correction</h1>
+        <div class = "Required-Documents">
+            <h2>Any of the Required Document</h2>
+            <ul>
+                
+                <li>	Aadhaar Letter	</li>
+                <li>	Address Certificate by Educational Institute	</li>
+                <li>	Arms License	</li>
+                <li>	Bank Statement or Passbook	</li>
+                <li>	Bhamashah Card	</li>
+                <li>	CGHS/ECHS Card	</li>
+                <li>	Caste And Domicile Certificate	</li>
+                <li>	Certificate Village Panchayat	</li>
+                <li>	Certificate of Address from Head of Institute</li>
+                <li>	Certificate of Address from Municipal Councillor	</li>
+                <li>	Certificate of Address from Orphanages	</li>
+                <li>	Certificate of Address from Panchayat Head	</li>
+                <li>	Certificate of Identity from EPFO	</li>
+                <li>	Citizenship Certificate	</li>
+                <li>	Credit Card Statement	</li>
+                <li>	Driving License	</li>
+                <li>	Electricity Bill	</li>
+                <li>	Extract Of School Records with Address	</li>
+                <li>	Freedom Fighter Card	</li>
+                <li>	Gas Connection	</li>
+                <li>	ID Card Issued By Educational Institute	</li>
+                <li>	Income Tax Assessment Order	</li>
+                <li>	Insurance Policy	</li>
+                <li>	Kisan Passbook	</li>
+                <li>	Landline Bill	</li>
+                <li>	Letter form Company	</li>
+                <li>	Letter from Bank on Letterhead	</li>
+                <li>	Letter from Educational Institute	</li>
+                <li>	Letter issued by Educational Institute	</li>
+                <li>	Marriage Certificate with Address	</li>
+                <li>	NRC Call Letter	</li>
+                <li>	NRC-GA Card	</li>
+                <li>	National Population Register Letter	</li>
+                <li>	Parents Passport	</li>
+                <li>	Passport	</li>
+                <li>	Passport Spouse	</li>
+                <li>	Pension Card	</li>
+                <li>	Permanent Resident Certificate	</li>
+                <li>	Photo ID Issued by PSUs	</li>
+                <li>	Photo Identity Card by Educational Institute	</li>
+                <li>	Post Office Statement or Passbook	</li>
+                <li>	Property Tax	</li>
+                <li>	Ration/PDS Card	</li>
+                <li>	SLC/TC with Name and Address	</li>
+                <li>	Sale/Lease/Rent Agreement	</li>
+                <li>	School Identity Card	</li>
+                <li>	Vehicle Registration Certificate	</li>
+                <li>	Voter ID Card	</li>
+                <li>	Water Bill	</li>
+                
+
+                
+            </ul>
+
+         </div>
+        
+         <div class = "Required-Documents" id = "apply">
+            <h1>Apply and Submit</h1>
+            
+<form action="../../Aadhaar_address_correction/Addrecord/" method="POST">
+{% csrf_token %}
+    
+    
+    <p><b>Name:</b>
+        <input type = "text" name = "name" id = "name" required> <br>
+        Mobile Number:
+        <input type = "text" name = "mobile" id = "mobile" required> <br>
+        
+        <b>Select your Document Name:</b>
+        <select name = "document">
+        <option value = "Select your Document "> ---Select Your Document---</option> 
+        <option value ="	Aadhaar Letter	">	Aadhaar Letter	</option>
+<option value ="	Address Certificate by Educational Institute	">	Address Certificate by Educational Institute	</option>
+<option value ="	Arms License	">	Arms License	</option>
+<option value ="	Bank Statement or Passbook	">	Bank Statement or Passbook	</option>
+<option value ="	Bhamashah Card	">	Bhamashah Card	</option>
+<option value ="	CGHS/ECHS Card	">	CGHS/ECHS Card	</option>
+<option value ="	Caste And Domicile Certificate	">	Caste And Domicile Certificate	</option>
+<option value ="	Certificate Village Panchayat	">	Certificate Village Panchayat	</option>
+<option value ="	Certificate of Address from Head of Institute	">	Certificate of Address from Head of Institute	</option>
+<option value ="	Certificate of Address from Municipal Councillor	">	Certificate of Address from Municipal Councillor	</option>
+<option value ="	Certificate of Address from Orphanages	">	Certificate of Address from Orphanages	</option>
+<option value ="	Certificate of Address from Panchayat Head	">	Certificate of Address from Panchayat Head	</option>
+<option value ="	Certificate of Identity from EPFO	">	Certificate of Identity from EPFO	</option>
+<option value ="	Citizenship Certificate	">	Citizenship Certificate	</option>
+<option value ="	Credit Card Statement	">	Credit Card Statement	</option>
+<option value ="	Driving License	">	Driving License	</option>
+<option value ="	Electricity Bill	">	Electricity Bill	</option>
+<option value ="	Extract Of School Records with Address	">	Extract Of School Records with Address	</option>
+<option value ="	Freedom Fighter Card	">	Freedom Fighter Card	</option>
+<option value ="	Gas Connection	">	Gas Connection	</option>
+<option value ="	ID Card Issued By Educational Institute	">	ID Card Issued By Educational Institute	</option>
+<option value ="	Income Tax Assessment Order	">	Income Tax Assessment Order	</option>
+<option value ="	Insurance Policy	">	Insurance Policy	</option>
+<option value ="	Kisan Passbook	">	Kisan Passbook	</option>
+<option value ="	Landline Bill	">	Landline Bill	</option>
+<option value ="	Letter form Company	">	Letter form Company	</option>
+<option value ="	Letter from Bank on Letterhead	">	Letter from Bank on Letterhead	</option>
+<option value ="	Letter from Educational Institute	">	Letter from Educational Institute	</option>
+<option value ="	Letter issued by Educational Institute	">	Letter issued by Educational Institute	</option>
+<option value ="	Marriage Certificate with Address	">	Marriage Certificate with Address	</option>
+<option value ="	NRC Call Letter	">	NRC Call Letter	</option>
+<option value ="	NRC-GA Card	">	NRC-GA Card	</option>
+<option value ="	National Population Register Letter	">	National Population Register Letter	</option>
+<option value ="	Parents Passport	">	Parents Passport	</option>
+<option value ="	Passport	">	Passport	</option>
+<option value ="	Passport Spouse	">	Passport Spouse	</option>
+<option value ="	Pension Card	">	Pension Card	</option>
+<option value ="	Permanent Resident Certificate	">	Permanent Resident Certificate	</option>
+<option value ="	Photo ID Issued by PSUs	">	Photo ID Issued by PSUs	</option>
+<option value ="	Photo Identity Card by Educational Institute	">	Photo Identity Card by Educational Institute	</option>
+<option value ="	Post Office Statement or Passbook	">	Post Office Statement or Passbook	</option>
+<option value ="	Property Tax	">	Property Tax	</option>
+<option value ="	Ration/PDS Card	">	Ration/PDS Card	</option>
+<option value ="	SLC/TC with Name and Address	">	SLC/TC with Name and Address	</option>
+<option value ="	Sale/Lease/Rent Agreement	">	Sale/Lease/Rent Agreement	</option>
+<option value ="	School Identity Card	">	School Identity Card	</option>
+<option value ="	Vehicle Registration Certificate	">	Vehicle Registration Certificate	</option>
+<option value ="	Voter ID Card	">	Voter ID Card	</option>
+<option value ="	Water Bill	">	Water Bill	</option>
+        
+
+    </select><br>
+
+<b>Upload Document:</b>
+    <input type = "file" name = "upload document" > <br>
+    <p>
+   <b>Enter your message </b> <br>
+
+    <textarea name="your message" cols="30" rows="10" placeholder="Enter your message"></textarea>
+</p>
+
+    </p>
+    <input type = "Submit"  value = "Submit">
+</form>
+         </div>
+
+    </body>
+</html>

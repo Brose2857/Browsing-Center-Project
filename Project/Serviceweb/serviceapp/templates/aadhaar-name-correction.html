@@ -1,0 +1,128 @@
+{% load static %}
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,user = scalable = no"/>
+        <title>Aadhaar Name Correction</title>
+        <link rel="stylesheet"  href="{% static "css/form.css" %}">
+        <link rel = "icon" href="{% static "images/diamond.png" %}">
+    </head>
+    
+    <body>
+        <h1>Aadhaar Name Correction</h1>
+        <div class = "Required-Documents">
+            <h2>Any of the Required Document</h2>
+            <ul>
+                <li>	Aadhaar Letter	</li>
+<li>	Arms License 	</li>
+<li>	Bank ATM Card with Photo	</li>
+<li>	Bank Passbook	</li>
+<li>	Bhamashah Card	</li>
+<li>	Certificate of DOB from State/Central Govt Authority	</li>
+<li>	Certificate of Identity from EPFO	</li>
+<li>	Certificate of Identity from Educational Institute	</li>
+<li>	Citizenship Certificate with Photo	</li>
+<li>	Credit Card with Photo	</li>
+<li>	Deptt of Post Issued Address Card	</li>
+<li>	Driving License	</li>
+<li>	Extract of School Records	</li>
+<li>	Freedom Fighter Photo Card	</li>
+<li>	Gazette Name Change Notification	</li>
+<li>	Gazette Notification	</li>
+<li>	Identity Card by Government Deptts	</li>
+<li>	Kisan Photo Passbook	</li>
+<li>	Legal Name Change Certificate	</li>
+<li>	Marriage Affidavit	</li>
+<li>	Marriage Certificate	</li>
+<li>	NRC Call Letter	</li>
+<li>	NREGA Card	</li>
+<li>	National Population Register Letter	</li>
+<li>	PAN Card 	</li>
+<li>	Passport 	</li>
+<li>	Pension Card	</li>
+<li>	Pensioner Photo Card	</li>
+<li>	Permanent Resident Photo Certificate 	</li>
+<li>	 Photo ID Card Issued by Educational Institute	</li>
+<li>	Photo ID Issued by PSUs	</li>
+<li>	Photo Identity Card by Educational Institute	</li>
+<li>	Rashtriya Swasthya Bima Yojana Card 	</li>
+<li>	 SLC/TC with Photo	</li>
+<li>	ST/SC/OBC Certificate with Photo	</li>
+<li>	School Identity Card	</li>
+<li>	Voter ID Card	</li>
+
+
+                
+            </ul>
+
+         </div>
+        
+         <div class = "Required-Documents" id = "apply">
+            <h1>Apply and Submit</h1>
+<form action = "../../Aadhaar_name_correction/Addrecord1" method = "POST">
+{% csrf_token %}
+    <p><b>Name:</b>
+        <input type = "text" name = "name" id = "name" required> <br>
+        <b>Mobile Number:</b>
+        <input type = "text" name = "mobile" id = "mobile" required> <br>
+        
+        <b>Select your Document Name:</b>
+        <select name = "document" required>
+        <option value = "Select your Document "> ---Select Your Document---</option> 
+        <option value ="	Aadhaar Letter	">	Aadhaar Letter	</option>
+        <option value ="	Arms License 	">	Arms License 	</option>
+        <option value ="	Bank ATM Card with Photo	">	Bank ATM Card with Photo	</option>
+        <option value ="	Bank Passbook	">	Bank Passbook	</option>
+        <option value ="	Bhamashah Card	">	Bhamashah Card	</option>
+        <option value ="	Certificate of DOB from State/Central Govt Authority	">	Certificate of DOB from State/Central Govt Authority	</option>
+        <option value ="	Certificate of Identity from EPFO	">	Certificate of Identity from EPFO	</option>
+        <option value ="	Certificate of Identity from Educational Institute	">	Certificate of Identity from Educational Institute	</option>
+        <option value ="	Citizenship Certificate with Photo	">	Citizenship Certificate with Photo	</option>
+        <option value ="	Credit Card with Photo	">	Credit Card with Photo	</option>
+        <option value ="	Deptt of Post Issued Address Card	">	Deptt of Post Issued Address Card	</option>
+        <option value ="	Driving License	">	Driving License	</option>
+        <option value ="	Extract of School Records	">	Extract of School Records	</option>
+        <option value ="	Freedom Fighter Photo Card	">	Freedom Fighter Photo Card	</option>
+        <option value ="	Gazette Name Change Notification	">	Gazette Name Change Notification	</option>
+        <option value ="	Gazette Notification	">	Gazette Notification	</option>
+        <option value ="	Identity Card by Government Deptts	">	Identity Card by Government Deptts	</option>
+        <option value ="	Kisan Photo Passbook	">	Kisan Photo Passbook	</option>
+        <option value ="	Legal Name Change Certificate	">	Legal Name Change Certificate	</option>
+        <option value ="	Marriage Affidavit	">	Marriage Affidavit	</option>
+        <option value ="	Marriage Certificate	">	Marriage Certificate	</option>
+        <option value ="	NRC Call Letter	">	NRC Call Letter	</option>
+        <option value ="	NREGA Card	">	NREGA Card	</option>
+        <option value ="	National Population Register Letter	">	National Population Register Letter	</option>
+        <option value ="	PAN Card 	">	PAN Card 	</option>
+        <option value ="	Passport 	">	Passport 	</option>
+        <option value ="	Pension Card	">	Pension Card	</option>
+        <option value ="	Pensioner Photo Card	">	Pensioner Photo Card	</option>
+        <option value ="	Permanent Resident Photo Certificate 	">	Permanent Resident Photo Certificate 	</option>
+        <option value ="	 Photo ID Card Issued by Educational Institute	">	 Photo ID Card Issued by Educational Institute	</option>
+        <option value ="	Photo ID Issued by PSUs	">	Photo ID Issued by PSUs	</option>
+        <option value ="	Photo Identity Card by Educational Institute	">	Photo Identity Card by Educational Institute	</option>
+        <option value ="	Rashtriya Swasthya Bima Yojana Card 	">	Rashtriya Swasthya Bima Yojana Card 	</option>
+        <option value ="	 SLC/TC with Photo	">	 SLC/TC with Photo	</option>
+        <option value ="	ST/SC/OBC Certificate with Photo	">	ST/SC/OBC Certificate with Photo	</option>
+        <option value ="	School Identity Card	">	School Identity Card	</option>
+        <option value ="	Voter ID Card	">	Voter ID Card	</option>
+        
+
+    </select><br>
+
+<b>Upload Document:</b>
+    <input type = "file" name = "upload document" > <br>
+    <p>
+    <b>Enter your message</b> <br>
+
+    <textarea name="your message" cols="30" rows="10" placeholder="Enter your message"></textarea>
+</p>
+
+    </p>
+    <input type = "Submit" value = "Submit">
+</form>
+         </div>
+
+    </body>
+</html>
